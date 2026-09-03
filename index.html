@@ -1,0 +1,347 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>time — one thing at a time</title>
+<meta name="description" content="time is a local-only focus timer for iPhone and iPad. Give the things you do each day their own goal, start one with a tap, and see exactly where your hours went. No account, no tracking.">
+<meta property="og:title" content="time — one thing at a time">
+<meta property="og:description" content="A local-only focus timer for iPhone and iPad. No account, no tracking.">
+<meta property="og:type" content="website">
+<meta name="theme-color" content="#b06a7a">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Instrument+Sans:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/site.css">
+<link rel="icon" href="assets/mark.svg" type="image/svg+xml">
+</head>
+<body>
+
+<header class="site-head">
+  <div class="wrap">
+    <a class="brand" href="./">
+      <svg width="26" height="26" viewBox="0 0 76 76" aria-hidden="true">
+        <circle cx="38" cy="38" r="30" fill="none" stroke="currentColor" stroke-width="8" opacity=".16"/>
+        <circle cx="38" cy="38" r="30" fill="none" stroke="#b06a7a" stroke-width="8" stroke-linecap="round"
+                stroke-dasharray="188.5" stroke-dashoffset="66" transform="rotate(-90 38 38)"/>
+        <circle cx="38" cy="38" r="5.5" fill="#b06a7a"/>
+      </svg>
+      time
+    </a>
+    <nav class="nav">
+      <a href="#features">Features</a>
+      <a href="#privacy">Privacy</a>
+      <a href="#pricing">Pro</a>
+      <a href="#faq">FAQ</a>
+    </nav>
+  </div>
+</header>
+
+<!-- ───────────────────────── hero ───────────────────────── -->
+<section class="hero">
+  <div class="wrap">
+    <div class="hero-copy">
+      <span class="badge">iPhone &amp; iPad · iOS 17+</span>
+      <h1>One thing<br>at a time.</h1>
+      <p class="lede">
+        time is a focus timer for people who want to do one thing at a time. Name the things you
+        actually spend your day on, give each a daily goal, and start one with a tap — starting
+        one pauses the rest, so your day stays honest about where the hours went.
+      </p>
+      <div class="cta-row">
+        <span class="btn btn--primary" aria-disabled="true">Coming soon to the App&nbsp;Store</span>
+        <a class="btn btn--ghost" href="#features">See what it does</a>
+      </div>
+      <p class="cta-note">No account. No tracking. Your focus data never leaves your phone.</p>
+    </div>
+
+    <!-- home screen, drawn from the app's own design tokens -->
+    <div class="phone" aria-label="The time app's Home screen">
+      <div class="phone-screen">
+        <div class="notch"></div>
+
+        <div class="ph-row">
+          <div style="display:flex; align-items:center; gap:10px">
+            <div class="avatar">YH</div>
+            <div>
+              <div class="ph-name">Yurii</div>
+              <div class="ph-date">Wednesday, Sep 3</div>
+            </div>
+          </div>
+        </div>
+
+        <div>
+          <p class="eyebrow" style="margin-bottom:8px">Today</p>
+          <div style="display:flex; align-items:baseline; gap:8px">
+            <span class="ph-total">4h 12m</span>
+            <span class="ph-of">of 7h</span>
+          </div>
+          <div class="segbar">
+            <span style="flex:4"><i style="width:72%; background:#b06a7a"></i></span>
+            <span style="flex:2"><i style="width:55%; background:#6f8f7a"></i></span>
+            <span style="flex:1"><i style="width:38%; background:#5f7d9c"></i></span>
+          </div>
+          <div style="display:flex; justify-content:space-between; font-size:12.5px; color:var(--muted); margin-top:8px">
+            <span>60% of goal</span><span>2h 48m left</span>
+          </div>
+        </div>
+
+        <div style="display:flex; flex-direction:column; gap:10px">
+          <div class="card focus-card">
+            <div style="min-width:0">
+              <div class="focus-name"><span class="dot" style="background:#b06a7a"></span>Deep work</div>
+              <div class="focus-time">2h 34m<em> / 4h · 64%</em></div>
+            </div>
+            <div class="ring">
+              <svg viewBox="0 0 56 56">
+                <circle cx="28" cy="28" r="26" fill="none" stroke="var(--border)" stroke-width="2.5"/>
+                <circle cx="28" cy="28" r="26" fill="none" stroke="#b06a7a" stroke-width="2.5"
+                        stroke-linecap="round" stroke-dasharray="163.4" stroke-dashoffset="59"/>
+              </svg>
+              <button type="button" tabindex="-1" aria-hidden="true">
+                <svg width="11" height="12" viewBox="0 0 13 14"><rect width="4.5" height="14" rx="1.5" fill="currentColor"/><rect x="8.5" width="4.5" height="14" rx="1.5" fill="currentColor"/></svg>
+              </button>
+            </div>
+          </div>
+
+          <div class="card focus-card">
+            <div style="min-width:0">
+              <div class="focus-name"><span class="dot" style="background:#6f8f7a"></span>Design</div>
+              <div class="focus-time">1h 06m<em> / 2h · 55%</em></div>
+            </div>
+            <div class="ring">
+              <svg viewBox="0 0 56 56">
+                <circle cx="28" cy="28" r="26" fill="none" stroke="var(--border)" stroke-width="2.5"/>
+                <circle cx="28" cy="28" r="26" fill="none" stroke="#6f8f7a" stroke-width="2.5"
+                        stroke-linecap="round" stroke-dasharray="163.4" stroke-dashoffset="74"/>
+              </svg>
+              <button type="button" tabindex="-1" aria-hidden="true" style="background:#6f8f7a">
+                <svg width="11" height="12" viewBox="0 0 13 14" style="margin-left:2px"><path d="M1 1l11 6-11 6z" fill="currentColor"/></svg>
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <div class="card card--flat">
+          <div style="font-size:14px; font-weight:600">Today's stats</div>
+          <p class="eyebrow" style="margin:12px 0 0">Focus by hour</p>
+          <div class="hist">
+            <i style="height:20%"></i><i style="height:45%"></i><i style="height:80%"></i>
+            <i style="height:100%"></i><i style="height:35%"></i><i style="height:12%"></i>
+            <i style="height:62%"></i><i style="height:88%"></i><i style="height:30%"></i>
+            <i style="height:8%"></i>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ───────────────────────── features ───────────────────────── -->
+<section id="features" class="alt">
+  <div class="wrap">
+    <div class="section-head">
+      <p class="eyebrow">What it does</p>
+      <h2>A timer built around focus items, not tasks</h2>
+      <p>Everything on screen is derived from sessions you actually logged — no estimates, no manual edits.</p>
+    </div>
+
+    <div class="grid">
+      <article class="feature">
+        <div class="ficon"><svg width="20" height="20" viewBox="0 0 20 20" fill="none"><circle cx="10" cy="10" r="7.5" stroke="currentColor" stroke-width="1.7"/><path d="M10 5.5V10l3 2" stroke="currentColor" stroke-width="1.7" stroke-linecap="round"/></svg></div>
+        <h3>Focus items, not just a timer</h3>
+        <p>Create the things you really spend time on, each with its own color and a daily hours goal. Your overall goal is simply the sum of them.</p>
+      </article>
+
+      <article class="feature">
+        <div class="ficon"><svg width="20" height="20" viewBox="0 0 20 20" fill="none"><rect x="4" y="4" width="4" height="12" rx="1.5" fill="currentColor"/><path d="M12 4.5l5 5.5-5 5.5" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"/></svg></div>
+        <h3>One thing runs at a time</h3>
+        <p>Starting a focus item pauses whatever else was running. Every run is logged as a session, so your totals always reflect what really happened.</p>
+      </article>
+
+      <article class="feature">
+        <div class="ficon"><svg width="20" height="20" viewBox="0 0 20 20" fill="none"><rect x="3" y="8" width="3.5" height="8" rx="1.2" fill="currentColor"/><rect x="8.25" y="4" width="3.5" height="12" rx="1.2" fill="currentColor"/><rect x="13.5" y="10" width="3.5" height="6" rx="1.2" fill="currentColor"/></svg></div>
+        <h3>Today, at a glance</h3>
+        <p>Home shows today's total against your combined goal, a segmented bar for each item's share, and a card per item with its own start/pause ring.</p>
+      </article>
+
+      <article class="feature">
+        <div class="ficon"><svg width="20" height="20" viewBox="0 0 20 20" fill="none"><path d="M3 13l4-4.5 3.5 3L17 5" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"/></svg></div>
+        <h3>Stats that explain your day</h3>
+        <p>Focus-by-hour histogram, per-item distribution, session count, longest session, current streak and top focus — all computed from your logged sessions.</p>
+      </article>
+
+      <article class="feature">
+        <div class="ficon"><svg width="20" height="20" viewBox="0 0 20 20" fill="none"><rect x="3.5" y="6" width="13" height="8" rx="4" stroke="currentColor" stroke-width="1.7"/><circle cx="7.5" cy="10" r="1.6" fill="currentColor"/></svg></div>
+        <h3>Lock Screen &amp; Dynamic Island</h3>
+        <p>While an item runs, a Live Activity shows its name, color, a live count-up clock and goal progress — with an inline Pause button, right on the Lock Screen.</p>
+      </article>
+
+      <article class="feature">
+        <div class="ficon"><svg width="20" height="20" viewBox="0 0 20 20" fill="none"><rect x="3" y="3" width="6.2" height="6.2" rx="1.8" stroke="currentColor" stroke-width="1.7"/><rect x="10.8" y="3" width="6.2" height="6.2" rx="1.8" stroke="currentColor" stroke-width="1.7"/><rect x="3" y="10.8" width="14" height="6.2" rx="1.8" stroke="currentColor" stroke-width="1.7"/></svg></div>
+        <h3>Home Screen widgets</h3>
+        <p>A small “Today” glance and a wider card with the current time and the day's segmented goal bar, for your Home Screen and StandBy — plus a Lock Screen ring.</p>
+      </article>
+
+      <article class="feature">
+        <div class="ficon"><svg width="20" height="20" viewBox="0 0 20 20" fill="none"><path d="M10 3v3M10 14v3M3 10h3M14 10h3M5 5l2 2M13 13l2 2M15 5l-2 2M7 13l-2 2" stroke="currentColor" stroke-width="1.7" stroke-linecap="round"/></svg></div>
+        <h3>Break reminders</h3>
+        <p>An optional nudge — in the app and as a local notification — after roughly 50 minutes of unbroken focus, so a long run doesn't quietly turn into burnout.</p>
+      </article>
+
+      <article class="feature">
+        <div class="ficon"><svg width="20" height="20" viewBox="0 0 20 20" fill="none"><circle cx="10" cy="10" r="7" stroke="currentColor" stroke-width="1.7"/><path d="M10 3a7 7 0 010 14z" fill="currentColor"/></svg></div>
+        <h3>Nine palettes, Light or Dark</h3>
+        <p>Light, Dark or Auto, with palettes from calm neutrals to bold accents — recoloring the whole app, your item colors, and even the app icon.</p>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- ───────────────────────── how it works ───────────────────────── -->
+<section id="how">
+  <div class="wrap">
+    <div class="section-head">
+      <p class="eyebrow">How it works</p>
+      <h2>Three steps, then get on with it</h2>
+    </div>
+    <div class="steps">
+      <div class="step">
+        <h3>Add your focus items</h3>
+        <p>Name the things you want to track and give each a daily-hours goal. Your total goal is the sum — no configuration beyond that.</p>
+      </div>
+      <div class="step">
+        <h3>Start a session</h3>
+        <p>Tap an item to start its timer. Starting another pauses the first. Time keeps running in the background, on the Lock Screen and in the Dynamic Island.</p>
+      </div>
+      <div class="step">
+        <h3>See your day</h3>
+        <p>Pause when you're done. Totals, streak and stats update instantly, built entirely from sessions logged on your device.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ───────────────────────── palettes ───────────────────────── -->
+<section class="alt">
+  <div class="wrap">
+    <div class="section-head">
+      <p class="eyebrow">Appearance</p>
+      <h2>Pick a palette that you'll want to look at</h2>
+      <p>Each palette recolors the app, the per-item color set and the app icon, in both day and night.</p>
+    </div>
+    <div class="palettes">
+      <div class="pal"><div class="pal-tile" style="background:#b06a7a; box-shadow:0 8px 18px #b06a7a55"></div><span class="pal-name">Blush</span></div>
+      <div class="pal"><div class="pal-tile" style="background:#3a6ea5; box-shadow:0 8px 18px #3a6ea555"></div><span class="pal-name">Harbor</span></div>
+      <div class="pal"><div class="pal-tile" style="background:#4a8a5f; box-shadow:0 8px 18px #4a8a5f55"></div><span class="pal-name">Grove</span></div>
+      <div class="pal"><div class="pal-tile" style="background:#b5654f; box-shadow:0 8px 18px #b5654f55"></div><span class="pal-name">Ember</span></div>
+      <div class="pal"><div class="pal-tile" style="background:#6a7bb0; box-shadow:0 8px 18px #6a7bb055"></div><span class="pal-name">Dusk</span></div>
+      <div class="pal"><div class="pal-tile" style="background:#9c7024; box-shadow:0 8px 18px #9c702455"></div><span class="pal-name">Amber</span></div>
+      <div class="pal"><div class="pal-tile" style="background:#9c6b4a; box-shadow:0 8px 18px #9c6b4a55"></div><span class="pal-name">Clay</span></div>
+      <div class="pal"><div class="pal-tile" style="background:#a8508f; box-shadow:0 8px 18px #a8508f55"></div><span class="pal-name">Bloom</span></div>
+      <div class="pal"><div class="pal-tile" style="background:#1f8b86; box-shadow:0 8px 18px #1f8b8655"></div><span class="pal-name">Lagoon</span></div>
+    </div>
+  </div>
+</section>
+
+<!-- ───────────────────────── privacy ───────────────────────── -->
+<section id="privacy">
+  <div class="wrap">
+    <div class="panel">
+      <p class="eyebrow">Privacy</p>
+      <h2>Your focus data never leaves your phone</h2>
+      <p class="lede" style="max-width:640px">
+        time has no server, no account and no networking code at all. Your focus items, sessions
+        and settings live on your device, stored with SwiftData — that's the whole architecture,
+        not a setting you have to find.
+      </p>
+      <ul class="checks">
+        <li><svg width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M3 8.5l3.2 3.2L13 5" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg><span>No account, no sign-in, anywhere in the app</span></li>
+        <li><svg width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M3 8.5l3.2 3.2L13 5" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg><span>No analytics and no third-party SDKs</span></li>
+        <li><svg width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M3 8.5l3.2 3.2L13 5" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg><span>No ads and no tracking across apps</span></li>
+        <li><svg width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M3 8.5l3.2 3.2L13 5" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg><span>Works fully offline — there's nothing to connect to</span></li>
+      </ul>
+      <p style="margin:26px 0 0; font-size:14.5px"><a href="privacy/">Read the full Privacy Policy →</a></p>
+    </div>
+  </div>
+</section>
+
+<!-- ───────────────────────── pricing ───────────────────────── -->
+<section id="pricing" class="alt">
+  <div class="wrap">
+    <div class="section-head">
+      <p class="eyebrow">Free &amp; Pro</p>
+      <h2>Free is a real version, not a trial</h2>
+      <p>Pro is one purchase or a yearly plan — bought through the App Store, with no account to create. Family Sharing is enabled, and Restore Purchases is built in.</p>
+    </div>
+    <div class="tiers">
+      <div class="tier">
+        <span class="tier-tag">Free</span>
+        <h3 style="font-size:22px; margin:8px 0 0">Everything you need to start</h3>
+        <ul>
+          <li><svg width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M3 8.5l3.2 3.2L13 5" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg><span>Up to 3 focus items</span></li>
+          <li><svg width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M3 8.5l3.2 3.2L13 5" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg><span>The Blush palette, in Light, Dark or Auto</span></li>
+          <li><svg width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M3 8.5l3.2 3.2L13 5" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg><span>Live Activity and Lock Screen ring widget</span></li>
+          <li><svg width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M3 8.5l3.2 3.2L13 5" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg><span>All stats, streaks and break reminders</span></li>
+        </ul>
+      </div>
+      <div class="tier tier--pro">
+        <span class="tier-tag">Pro</span>
+        <h3 style="font-size:22px; margin:8px 0 0">One purchase, no account</h3>
+        <ul>
+          <li><svg width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M3 8.5l3.2 3.2L13 5" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg><span>Up to 8 focus items</span></li>
+          <li><svg width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M3 8.5l3.2 3.2L13 5" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg><span>All nine palettes, plus the matching app icons</span></li>
+          <li><svg width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M3 8.5l3.2 3.2L13 5" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg><span>Home Screen widgets, small and medium</span></li>
+          <li><svg width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M3 8.5l3.2 3.2L13 5" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg><span>Lifetime or yearly, with Family Sharing</span></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ───────────────────────── faq ───────────────────────── -->
+<section id="faq">
+  <div class="wrap">
+    <div class="section-head">
+      <p class="eyebrow">Questions</p>
+      <h2>Good to know</h2>
+    </div>
+    <div class="faq">
+      <details open>
+        <summary>Does time need an internet connection?</summary>
+        <p>No. time works entirely offline — there's no networking in the app and nothing is ever uploaded.</p>
+      </details>
+      <details>
+        <summary>Do I need to create an account?</summary>
+        <p>No. There's no sign-in anywhere in the app, including for the Pro purchase — that goes through your Apple ID.</p>
+      </details>
+      <details>
+        <summary>Can I run two focus items at once?</summary>
+        <p>Deliberately not. Starting one pauses whichever item was running, so your logged time always reflects one thing at a time.</p>
+      </details>
+      <details>
+        <summary>What do I lose if I don't buy Pro?</summary>
+        <p>Nothing you've already recorded. Free gives you three focus items, the Blush palette, the Lock Screen ring and the Live Activity. If items go beyond the free limit they simply can't be started again — their history stays intact and still counts in your stats.</p>
+      </details>
+      <details>
+        <summary>What do I need to run it?</summary>
+        <p>An iPhone or iPad on iOS 17 or later. iOS 17 is the floor because the app is built on SwiftData and the Observation framework, which covers iPhone XS/XR/SE (2nd gen) and newer.</p>
+      </details>
+    </div>
+  </div>
+</section>
+
+<footer class="site-foot">
+  <div class="wrap">
+    <p>© <span id="yr">2026</span> time. Made for people who do one thing at a time.</p>
+    <nav class="foot-links">
+      <a href="privacy/">Privacy Policy</a>
+      <a href="terms/">Terms of Use</a>
+      <a href="mailto:gutachkee@gmail.com">Contact</a>
+    </nav>
+  </div>
+</footer>
+
+<script>document.getElementById('yr').textContent = new Date().getFullYear();</script>
+</body>
+</html>
