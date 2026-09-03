@@ -29,6 +29,7 @@
       time
     </a>
     <nav class="nav">
+      <a href="#screens">Screens</a>
       <a href="#features">Features</a>
       <a href="#privacy">Privacy</a>
       <a href="#pricing">Pro</a>
@@ -50,100 +51,235 @@
       </p>
       <div class="cta-row">
         <span class="btn btn--primary" aria-disabled="true">Coming soon to the App&nbsp;Store</span>
-        <a class="btn btn--ghost" href="#features">See what it does</a>
+        <a class="btn btn--ghost" href="#screens">See every screen</a>
       </div>
       <p class="cta-note">No account. No tracking. Your focus data never leaves your phone.</p>
     </div>
 
-    <!-- home screen, drawn from the app's own design tokens -->
-    <div class="phone" aria-label="The time app's Home screen">
-      <div class="phone-screen">
-        <div class="notch"></div>
-
-        <div class="ph-row">
-          <div style="display:flex; align-items:center; gap:10px">
-            <div class="avatar">YH</div>
-            <div>
-              <div class="ph-name">Yurii</div>
-              <div class="ph-date">Wednesday, Sep 3</div>
-            </div>
-          </div>
-        </div>
-
-        <div>
-          <p class="eyebrow" style="margin-bottom:8px">Today</p>
-          <div style="display:flex; align-items:baseline; gap:8px">
-            <span class="ph-total">4h 12m</span>
-            <span class="ph-of">of 7h</span>
-          </div>
-          <div class="segbar">
-            <span style="flex:4"><i style="width:72%; background:#b06a7a"></i></span>
-            <span style="flex:2"><i style="width:55%; background:#6f8f7a"></i></span>
-            <span style="flex:1"><i style="width:38%; background:#5f7d9c"></i></span>
-          </div>
-          <div style="display:flex; justify-content:space-between; font-size:12.5px; color:var(--muted); margin-top:8px">
-            <span>60% of goal</span><span>2h 48m left</span>
-          </div>
-        </div>
-
-        <div style="display:flex; flex-direction:column; gap:10px">
-          <div class="card focus-card">
-            <div style="min-width:0">
-              <div class="focus-name"><span class="dot" style="background:#b06a7a"></span>Deep work</div>
-              <div class="focus-time">2h 34m<em> / 4h · 64%</em></div>
-            </div>
-            <div class="ring">
-              <svg viewBox="0 0 56 56">
-                <circle cx="28" cy="28" r="26" fill="none" stroke="var(--border)" stroke-width="2.5"/>
-                <circle cx="28" cy="28" r="26" fill="none" stroke="#b06a7a" stroke-width="2.5"
-                        stroke-linecap="round" stroke-dasharray="163.4" stroke-dashoffset="59"/>
-              </svg>
-              <button type="button" tabindex="-1" aria-hidden="true">
-                <svg width="11" height="12" viewBox="0 0 13 14"><rect width="4.5" height="14" rx="1.5" fill="currentColor"/><rect x="8.5" width="4.5" height="14" rx="1.5" fill="currentColor"/></svg>
-              </button>
-            </div>
-          </div>
-
-          <div class="card focus-card">
-            <div style="min-width:0">
-              <div class="focus-name"><span class="dot" style="background:#6f8f7a"></span>Design</div>
-              <div class="focus-time">1h 06m<em> / 2h · 55%</em></div>
-            </div>
-            <div class="ring">
-              <svg viewBox="0 0 56 56">
-                <circle cx="28" cy="28" r="26" fill="none" stroke="var(--border)" stroke-width="2.5"/>
-                <circle cx="28" cy="28" r="26" fill="none" stroke="#6f8f7a" stroke-width="2.5"
-                        stroke-linecap="round" stroke-dasharray="163.4" stroke-dashoffset="74"/>
-              </svg>
-              <button type="button" tabindex="-1" aria-hidden="true" style="background:#6f8f7a">
-                <svg width="11" height="12" viewBox="0 0 13 14" style="margin-left:2px"><path d="M1 1l11 6-11 6z" fill="currentColor"/></svg>
-              </button>
-            </div>
-          </div>
-        </div>
-
-        <div class="card card--flat">
-          <div style="font-size:14px; font-weight:600">Today's stats</div>
-          <p class="eyebrow" style="margin:12px 0 0">Focus by hour</p>
-          <div class="hist">
-            <i style="height:20%"></i><i style="height:45%"></i><i style="height:80%"></i>
-            <i style="height:100%"></i><i style="height:35%"></i><i style="height:12%"></i>
-            <i style="height:62%"></i><i style="height:88%"></i><i style="height:30%"></i>
-            <i style="height:8%"></i>
-          </div>
-        </div>
+    <div class="hero-shots">
+      <div class="device device--sm device--back" aria-hidden="true">
+        <img src="assets/shots/home-dark.webp" width="720" height="1565" alt="">
+      </div>
+      <div class="device device--lg device--front">
+        <img src="assets/shots/home-light.webp" width="720" height="1565" fetchpriority="high"
+             alt="The Home screen: today's total of 4h 57m against an 8h goal, a segmented bar per focus item, and a card for each item with its own start/pause ring. Deep work is running.">
       </div>
     </div>
   </div>
 </section>
 
+<!-- ───────────────────────── screenshot strip ───────────────────────── -->
+<section id="screens" class="alt">
+  <div class="wrap">
+    <div class="section-head">
+      <p class="eyebrow">A look inside</p>
+      <h2>Every screen, as it actually looks</h2>
+      <p>Real screenshots from the app running on iPhone — the same numbers you'd see after a day of tracking, because they're all derived from logged sessions.</p>
+    </div>
+
+    <div class="shots-wrap">
+      <div class="shots">
+        <figure class="shot">
+          <div class="device device--sm"><img src="assets/shots/home-light.webp" width="720" height="1565" loading="lazy"
+            alt="Home in Day mode: 4h 57m of an 8h goal, five focus items, Deep work running."></div>
+          <figcaption><b>Home</b><span>Today's total, the goal bar and one card per focus item.</span></figcaption>
+        </figure>
+        <figure class="shot">
+          <div class="device device--sm"><img src="assets/shots/home-stats.webp" width="720" height="1565" loading="lazy"
+            alt="Today's stats card with a focus-by-hour histogram, per-item distribution, sessions and longest session, above the weekly card showing a 3-day streak."></div>
+          <figcaption><b>Today's stats</b><span>Focus by hour, distribution, sessions, streak.</span></figcaption>
+        </figure>
+        <figure class="shot">
+          <div class="device device--sm"><img src="assets/shots/weekly.webp" width="720" height="1565" loading="lazy"
+            alt="Weekly history screen listing past weeks with totals, a per-item legend and stacked day bars."></div>
+          <figcaption><b>Weekly history</b><span>Past weeks, newest first, with stacked day bars.</span></figcaption>
+        </figure>
+        <figure class="shot">
+          <div class="device device--sm"><img src="assets/shots/items.webp" width="720" height="1565" loading="lazy"
+            alt="Focus items editor with five items, each with an hours-per-day stepper, a color dot and an archive button."></div>
+          <figcaption><b>Focus items</b><span>Hours per day, colors, order — and the goal sum.</span></figcaption>
+        </figure>
+        <figure class="shot">
+          <div class="device device--sm"><img src="assets/shots/settings.webp" width="720" height="1565" loading="lazy"
+            alt="Settings showing the Pro status card and the Appearance section with the Day/Night/Auto theme picker and the palette list."></div>
+          <figcaption><b>Settings</b><span>Theme, palettes, tracking, Pro — all in one scroll.</span></figcaption>
+        </figure>
+        <figure class="shot">
+          <div class="device device--sm"><img src="assets/shots/home-break.webp" width="720" height="1565" loading="lazy"
+            alt="Home with a break nudge: “Time for a break? You've focused 1h 4m straight”, with a Snooze action."></div>
+          <figcaption><b>Break nudge</b><span>A gentle prompt after a long unbroken run.</span></figcaption>
+        </figure>
+        <figure class="shot">
+          <div class="device device--sm"><img src="assets/shots/setup.webp" width="720" height="1565" loading="lazy"
+            alt="Onboarding screen asking for your name and the focus items you want to track."></div>
+          <figcaption><b>Setup</b><span>Name, items, hours. That's the whole configuration.</span></figcaption>
+        </figure>
+        <figure class="shot">
+          <div class="device device--sm"><img src="assets/shots/welcome.webp" width="720" height="1565" loading="lazy"
+            alt="The first welcome screen: the arc-timer mark above “meet time — One task, your full attention, and real rest in between.”"></div>
+          <figcaption><b>Welcome</b><span>A five-screen intro, replayable from Settings.</span></figcaption>
+        </figure>
+        <figure class="shot">
+          <div class="device device--sm"><img src="assets/shots/home-dark.webp" width="720" height="1565" loading="lazy"
+            alt="Home at night using the Lagoon palette, with teal accents on a near-black background."></div>
+          <figcaption><b>Night</b><span>The same Home, in Night with the Lagoon palette.</span></figcaption>
+        </figure>
+      </div>
+    </div>
+    <p class="strip-note">
+      <svg width="14" height="14" viewBox="0 0 16 16" fill="none" aria-hidden="true"><path d="M2 8h11M9 4l4 4-4 4" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg>
+      Scroll for more screens
+    </p>
+  </div>
+</section>
+
+<!-- ───────────────────────── showcases ───────────────────────── -->
+<section id="how">
+  <div class="wrap">
+    <div class="section-head">
+      <p class="eyebrow">How it works</p>
+      <h2>Start one thing, and the day writes itself</h2>
+      <p>Everything on screen is derived from sessions you actually logged — no estimates, no manual edits, nothing to tidy up afterwards.</p>
+    </div>
+
+    <div class="showcase">
+      <div class="showcase-copy">
+        <p class="eyebrow">01 · Focus items</p>
+        <h3>Name what you spend time on, once</h3>
+        <p>Add the things you really do — deep work, design, email, reading, a workout — and give each a daily hours goal and a color. Your overall goal is simply the sum of them.</p>
+        <ul class="bullets">
+          <li>Steppers for hours per day, drag to reorder, tap a dot to recolor</li>
+          <li>Archive instead of delete: the item leaves Home, its history stays</li>
+          <li>Up to 3 items on Free, up to 8 with Pro</li>
+        </ul>
+      </div>
+      <div class="device device--md"><img src="assets/shots/items.webp" width="720" height="1565" loading="lazy"
+        alt="Focus items editor: Deep work 3h, Design 2h, Email &amp; admin 1h, Reading 1h, Workout 1h, with a daily goal of 8h."></div>
+    </div>
+
+    <div class="showcase showcase--rev">
+      <div class="showcase-copy">
+        <p class="eyebrow">02 · One at a time</p>
+        <h3>Tap to start — the rest pauses itself</h3>
+        <p>Starting a focus item stops whatever was running, so two timers can never quietly overlap. Each run is logged as a session and the totals move as you work.</p>
+        <ul class="bullets">
+          <li>Time keeps running in the background and across relaunches</li>
+          <li>A forgotten run auto-stops at that item's daily goal</li>
+          <li>Sessions split at midnight, so a late night lands on the right day</li>
+        </ul>
+      </div>
+      <div class="device device--md"><img src="assets/shots/home-light.webp" width="720" height="1565" loading="lazy"
+        alt="Home with Deep work running at 2h 12m of its 3h goal and the other four items paused."></div>
+    </div>
+
+    <div class="showcase">
+      <div class="showcase-copy">
+        <p class="eyebrow">03 · Your day, explained</p>
+        <h3>Stats that say where the hours went</h3>
+        <p>A focus-by-hour histogram, the split between items, how many sessions you ran and how long the longest one was — plus the week so far, your streak and your top focus.</p>
+        <ul class="bullets">
+          <li>Every number recomputed from logged sessions, live</li>
+          <li>Streak counts the consecutive days you actually hit the goal</li>
+          <li>The weekly card opens a full history of past weeks</li>
+        </ul>
+      </div>
+      <div class="device device--md"><img src="assets/shots/home-stats.webp" width="720" height="1565" loading="lazy"
+        alt="Today's stats and This week: 30h 39m this week, average 7h 39m, a 3-day streak, top focus Deep work."></div>
+    </div>
+
+    <div class="showcase showcase--rev">
+      <div class="showcase-copy">
+        <p class="eyebrow">04 · Look back</p>
+        <h3>Weeks you can compare at a glance</h3>
+        <p>Weekly history lists past weeks newest first, each with its total and daily average, a legend of the items that made it up, and stacked bars for every day.</p>
+        <ul class="bullets">
+          <li>Archived items are still attributed, and badged as archived</li>
+          <li>Totals and averages per week, with the week's top focus</li>
+        </ul>
+      </div>
+      <div class="device device--md"><img src="assets/shots/weekly.webp" width="720" height="1565" loading="lazy"
+        alt="Weekly history: the week of Aug 24–30 totalling 47h 27m, average 6h 46m, with stacked bars per day."></div>
+    </div>
+  </div>
+</section>
+
+<!-- ───────────────────────── beyond the app ───────────────────────── -->
+<section id="surfaces" class="alt">
+  <div class="wrap">
+    <div class="section-head">
+      <p class="eyebrow">Outside the app</p>
+      <h2>The running timer follows you around iOS</h2>
+      <p>While a focus item runs, it shows up where you already look — no need to reopen the app to check or to stop it.</p>
+    </div>
+
+    <div class="surfaces">
+      <article class="surface">
+        <div class="mock" role="img" aria-label="Illustration of the Lock Screen Live Activity: Deep work, a count-up clock and a Pause button.">
+          <div class="la">
+            <div class="la-top">
+              <span class="la-name"><span class="dot" style="background:#d98aa0"></span>Deep work</span>
+              <span class="la-clock">47:12</span>
+            </div>
+            <div class="la-bar"><i></i></div>
+            <div class="la-foot"><span>2h 12m of 3h</span><span class="la-pause">Pause</span></div>
+          </div>
+        </div>
+        <h3>Lock Screen Live Activity</h3>
+        <p>The item's name and color, a self-updating count-up clock, goal progress and an inline Pause button — right on the Lock Screen.</p>
+      </article>
+
+      <article class="surface">
+        <div class="mock" role="img" aria-label="Illustration of the Dynamic Island showing the running item and its clock.">
+          <div class="island">
+            <span class="dot" style="background:#d98aa0"></span>
+            <span>Deep work</span>
+            <span class="la-clock">47:12</span>
+          </div>
+        </div>
+        <h3>Dynamic Island</h3>
+        <p>The same run, compact. It starts when you start, updates in place when you switch items, and ends when you pause.</p>
+      </article>
+
+      <article class="surface">
+        <div class="mock mock--flat" role="img" aria-label="Illustration of the small and medium Home Screen widgets.">
+          <div class="wid-row">
+            <div class="wid wid--sm">
+              <svg class="wid-ring" viewBox="0 0 40 40" aria-hidden="true">
+                <circle cx="20" cy="20" r="17" fill="none" stroke="currentColor" stroke-width="4" opacity=".16"/>
+                <circle cx="20" cy="20" r="17" fill="none" stroke="#b06a7a" stroke-width="4" stroke-linecap="round"
+                        stroke-dasharray="106.8" stroke-dashoffset="29" transform="rotate(-90 20 20)"/>
+              </svg>
+              <div>
+                <span class="wid-big" style="display:block">2h 12m</span>
+                <span class="wid-label">Deep work</span>
+              </div>
+            </div>
+            <div class="wid wid--md">
+              <span class="wid-label">Today · 4h 57m of 8h</span>
+              <div class="segbar" style="margin-top:0">
+                <span style="flex:3"><i style="width:74%; background:#b06a7a"></i></span>
+                <span style="flex:2"><i style="width:46%; background:#6f8f7a"></i></span>
+                <span style="flex:1"><i style="width:33%; background:#5f7d9c"></i></span>
+                <span style="flex:1"><i style="width:58%; background:#c9a227"></i></span>
+              </div>
+              <span class="wid-big">9:41</span>
+            </div>
+          </div>
+        </div>
+        <h3>Home Screen &amp; StandBy widgets</h3>
+        <p>A small glance with the ring and today's time, a wider card with the clock and the segmented goal bar, and a Lock Screen ring for StandBy.</p>
+      </article>
+    </div>
+  </div>
+</section>
+
 <!-- ───────────────────────── features ───────────────────────── -->
-<section id="features" class="alt">
+<section id="features">
   <div class="wrap">
     <div class="section-head">
       <p class="eyebrow">What it does</p>
       <h2>A timer built around focus items, not tasks</h2>
-      <p>Everything on screen is derived from sessions you actually logged — no estimates, no manual edits.</p>
+      <p>No projects, no tags, no backlog to groom. Just the handful of things you want your day to be made of.</p>
     </div>
 
     <div class="grid">
@@ -186,50 +322,56 @@
       <article class="feature">
         <div class="ficon"><svg width="20" height="20" viewBox="0 0 20 20" fill="none"><path d="M10 3v3M10 14v3M3 10h3M14 10h3M5 5l2 2M13 13l2 2M15 5l-2 2M7 13l-2 2" stroke="currentColor" stroke-width="1.7" stroke-linecap="round"/></svg></div>
         <h3>Break reminders</h3>
-        <p>An optional nudge — in the app and as a local notification — after roughly 50 minutes of unbroken focus, so a long run doesn't quietly turn into burnout.</p>
+        <p>An optional nudge — in the app and as a local notification — after a stretch of unbroken focus you choose, so a long run doesn't quietly turn into burnout.</p>
+      </article>
+
+      <article class="feature">
+        <div class="ficon"><svg width="20" height="20" viewBox="0 0 20 20" fill="none"><path d="M4 15V6.5A2.5 2.5 0 016.5 4H16" stroke="currentColor" stroke-width="1.7" stroke-linecap="round"/><rect x="7" y="8" width="9" height="8" rx="2" stroke="currentColor" stroke-width="1.7"/></svg></div>
+        <h3>Archive, don't delete</h3>
+        <p>Retire an item and it leaves Home and the goal sum while its sessions stay in your stats and history — restore it whenever you want it back.</p>
       </article>
 
       <article class="feature">
         <div class="ficon"><svg width="20" height="20" viewBox="0 0 20 20" fill="none"><circle cx="10" cy="10" r="7" stroke="currentColor" stroke-width="1.7"/><path d="M10 3a7 7 0 010 14z" fill="currentColor"/></svg></div>
-        <h3>Nine palettes, Light or Dark</h3>
-        <p>Light, Dark or Auto, with palettes from calm neutrals to bold accents — recoloring the whole app, your item colors, and even the app icon.</p>
+        <h3>Nine palettes, Day or Night</h3>
+        <p>Day, Night or Auto, with palettes from calm neutrals to bold accents — recoloring the whole app, your item colors, and even the app icon.</p>
       </article>
-    </div>
-  </div>
-</section>
-
-<!-- ───────────────────────── how it works ───────────────────────── -->
-<section id="how">
-  <div class="wrap">
-    <div class="section-head">
-      <p class="eyebrow">How it works</p>
-      <h2>Three steps, then get on with it</h2>
-    </div>
-    <div class="steps">
-      <div class="step">
-        <h3>Add your focus items</h3>
-        <p>Name the things you want to track and give each a daily-hours goal. Your total goal is the sum — no configuration beyond that.</p>
-      </div>
-      <div class="step">
-        <h3>Start a session</h3>
-        <p>Tap an item to start its timer. Starting another pauses the first. Time keeps running in the background, on the Lock Screen and in the Dynamic Island.</p>
-      </div>
-      <div class="step">
-        <h3>See your day</h3>
-        <p>Pause when you're done. Totals, streak and stats update instantly, built entirely from sessions logged on your device.</p>
-      </div>
     </div>
   </div>
 </section>
 
 <!-- ───────────────────────── palettes ───────────────────────── -->
-<section class="alt">
+<section id="appearance" class="alt">
   <div class="wrap">
     <div class="section-head">
       <p class="eyebrow">Appearance</p>
-      <h2>Pick a palette that you'll want to look at</h2>
-      <p>Each palette recolors the app, the per-item color set and the app icon, in both day and night.</p>
+      <h2>Pick a palette you'll want to look at</h2>
+      <p>Each palette recolors the app, the per-item color set and the app icon, in both Day and Night.</p>
     </div>
+
+    <div class="pal-shots">
+      <figure class="pal-shot">
+        <div class="device device--xs"><img src="assets/shots/home-light.webp" width="720" height="1565" loading="lazy"
+          alt="Home with the Blush palette in Day mode."></div>
+        <figcaption class="tag">Blush · Day</figcaption>
+      </figure>
+      <figure class="pal-shot">
+        <div class="device device--xs"><img src="assets/shots/home-harbor.webp" width="720" height="1565" loading="lazy"
+          alt="Home with the Harbor palette in Day mode, using cool blues and teal."></div>
+        <figcaption class="tag">Harbor · Day</figcaption>
+      </figure>
+      <figure class="pal-shot">
+        <div class="device device--xs"><img src="assets/shots/home-dark.webp" width="720" height="1565" loading="lazy"
+          alt="Home with the Lagoon palette in Night mode."></div>
+        <figcaption class="tag">Lagoon · Night</figcaption>
+      </figure>
+      <figure class="pal-shot">
+        <div class="device device--xs"><img src="assets/shots/settings-dark.webp" width="720" height="1565" loading="lazy"
+          alt="The Appearance section of Settings at night: the Day/Night/Auto picker and the palette list with per-item swatches."></div>
+        <figcaption class="tag">Picking one</figcaption>
+      </figure>
+    </div>
+
     <div class="palettes">
       <div class="pal"><div class="pal-tile" style="background:#b06a7a; box-shadow:0 8px 18px #b06a7a55"></div><span class="pal-name">Blush</span></div>
       <div class="pal"><div class="pal-tile" style="background:#3a6ea5; box-shadow:0 8px 18px #3a6ea555"></div><span class="pal-name">Harbor</span></div>
@@ -274,27 +416,34 @@
       <h2>Free is a real version, not a trial</h2>
       <p>Pro is one purchase or a yearly plan — bought through the App Store, with no account to create. Family Sharing is enabled, and Restore Purchases is built in.</p>
     </div>
-    <div class="tiers">
-      <div class="tier">
-        <span class="tier-tag">Free</span>
-        <h3 style="font-size:22px; margin:8px 0 0">Everything you need to start</h3>
-        <ul>
-          <li><svg width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M3 8.5l3.2 3.2L13 5" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg><span>Up to 3 focus items</span></li>
-          <li><svg width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M3 8.5l3.2 3.2L13 5" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg><span>The Blush palette, in Light, Dark or Auto</span></li>
-          <li><svg width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M3 8.5l3.2 3.2L13 5" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg><span>Live Activity and Lock Screen ring widget</span></li>
-          <li><svg width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M3 8.5l3.2 3.2L13 5" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg><span>All stats, streaks and break reminders</span></li>
-        </ul>
+
+    <div class="showcase" style="padding-top:0">
+      <div class="showcase-copy">
+        <div class="tiers">
+          <div class="tier">
+            <span class="tier-tag">Free</span>
+            <h3 style="font-size:22px; margin:8px 0 0">Everything you need to start</h3>
+            <ul>
+              <li><svg width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M3 8.5l3.2 3.2L13 5" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg><span>Up to 3 focus items</span></li>
+              <li><svg width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M3 8.5l3.2 3.2L13 5" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg><span>The Blush palette, in Day, Night or Auto</span></li>
+              <li><svg width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M3 8.5l3.2 3.2L13 5" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg><span>Live Activity and Lock Screen ring widget</span></li>
+              <li><svg width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M3 8.5l3.2 3.2L13 5" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg><span>All stats, streaks and break reminders</span></li>
+            </ul>
+          </div>
+          <div class="tier tier--pro">
+            <span class="tier-tag">Pro</span>
+            <h3 style="font-size:22px; margin:8px 0 0">One purchase, no account</h3>
+            <ul>
+              <li><svg width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M3 8.5l3.2 3.2L13 5" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg><span>Up to 8 focus items</span></li>
+              <li><svg width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M3 8.5l3.2 3.2L13 5" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg><span>All nine palettes, plus the matching app icons</span></li>
+              <li><svg width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M3 8.5l3.2 3.2L13 5" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg><span>Home Screen widgets, small and medium</span></li>
+              <li><svg width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M3 8.5l3.2 3.2L13 5" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg><span>Lifetime or yearly, with Family Sharing</span></li>
+            </ul>
+          </div>
+        </div>
       </div>
-      <div class="tier tier--pro">
-        <span class="tier-tag">Pro</span>
-        <h3 style="font-size:22px; margin:8px 0 0">One purchase, no account</h3>
-        <ul>
-          <li><svg width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M3 8.5l3.2 3.2L13 5" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg><span>Up to 8 focus items</span></li>
-          <li><svg width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M3 8.5l3.2 3.2L13 5" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg><span>All nine palettes, plus the matching app icons</span></li>
-          <li><svg width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M3 8.5l3.2 3.2L13 5" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg><span>Home Screen widgets, small and medium</span></li>
-          <li><svg width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M3 8.5l3.2 3.2L13 5" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg><span>Lifetime or yearly, with Family Sharing</span></li>
-        </ul>
-      </div>
+      <div class="device device--md"><img src="assets/shots/paywall.webp" width="720" height="1565" loading="lazy"
+        alt="The Pro sheet: unlimited focus items, all nine palettes, Home Screen widgets and every future Pro feature, with a lifetime and a yearly plan."></div>
     </div>
   </div>
 </section>
@@ -320,12 +469,20 @@
         <p>Deliberately not. Starting one pauses whichever item was running, so your logged time always reflects one thing at a time.</p>
       </details>
       <details>
+        <summary>What happens if I forget to stop the timer?</summary>
+        <p>A run auto-stops once it reaches that item's daily goal, and a session that crosses midnight is split so each day gets its own share. Both happen without you doing anything.</p>
+      </details>
+      <details>
         <summary>What do I lose if I don't buy Pro?</summary>
         <p>Nothing you've already recorded. Free gives you three focus items, the Blush palette, the Lock Screen ring and the Live Activity. If items go beyond the free limit they simply can't be started again — their history stays intact and still counts in your stats.</p>
       </details>
       <details>
         <summary>What do I need to run it?</summary>
         <p>An iPhone or iPad on iOS 17 or later. iOS 17 is the floor because the app is built on SwiftData and the Observation framework, which covers iPhone XS/XR/SE (2nd gen) and newer.</p>
+      </details>
+      <details>
+        <summary>Are the screenshots real?</summary>
+        <p>Yes — every screenshot on this page was captured from the app running on an iPhone, with a sample day of focus data. The Lock Screen, Dynamic Island and widget cards above are drawn illustrations of those surfaces.</p>
       </details>
     </div>
   </div>
