@@ -291,7 +291,12 @@ details p{margin:10px 0 0; color:var(--muted); font-size:15px}
 }
 
 @media (max-width:640px){
-  /* keep the header on one line: the deep links live in the page anyway */
+  /* keep the header on one line: the links marked .opt live in the page anyway */
   .nav{gap:16px; font-size:13.5px}
-  .nav a:nth-child(2), .nav a:nth-child(3){display:none}
+  .nav a.opt{display:none}
 }
+
+/* ── support ─────────────────────────────────────────────── */
+.support-hero{padding:68px 0 8px}
+.support-hero h1{font-size:clamp(32px,5vw,46px); margin-bottom:16px}
+.support-hero .cta-note a{color:var(--muted)}

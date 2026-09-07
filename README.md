@@ -4,11 +4,24 @@ Public marketing and legal pages for **time**, a local-only focus timer for iPho
 
 Served with GitHub Pages from the `main` branch, `/` (root).
 
-| Page | Path | URL once Pages is enabled |
-|---|---|---|
-| Landing | `index.html` | `/` |
-| Privacy Policy | `privacy/index.html` | `/privacy` |
-| Terms of Use | `terms/index.html` | `/terms` |
+| Page | Path | URL | Used as |
+|---|---|---|---|
+| Landing | `index.html` | `/` | **App Store Marketing URL** |
+| Support | `support/index.html` | `/support` | **App Store Support URL** |
+| Privacy Policy | `privacy/index.html` | `/privacy` | App Store Privacy Policy URL |
+| Terms of Use | `terms/index.html` | `/terms` | EULA link (Apple Standard EULA) |
+
+Live base URL: <https://gutachkee.github.io/time-public/> — all links are relative, so the site also
+works unchanged behind a custom domain if a `CNAME` is added back.
+
+## App Store Connect
+
+| Field | Value |
+|---|---|
+| Marketing URL | `https://gutachkee.github.io/time-public/` |
+| Support URL | `https://gutachkee.github.io/time-public/support/` |
+| Privacy Policy URL | `https://gutachkee.github.io/time-public/privacy/` |
+| Support email | `gutachkee@gmail.com` |
 
 Static HTML with one shared stylesheet (`assets/site.css`). No build step — edit and push.
 
